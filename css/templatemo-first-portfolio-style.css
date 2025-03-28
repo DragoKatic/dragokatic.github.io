@@ -498,9 +498,8 @@ strong {
   background: var(--secondary-color);
   position: relative;
   overflow: hidden;
-
   height: 100vh;
-  padding-top: 15%;
+  padding-top: 128px;
 }
 
 .drago-katic-development-text-box,
@@ -1535,7 +1534,7 @@ magnific-popup.css   */
   position: relative;
   overflow: hidden;
   height: 100vh;
-  padding-top: 23%;
+  padding-top: 256px;
 }
 .drago-katic-development-text-box,
 .dragokatic h2 {
@@ -1555,6 +1554,7 @@ magnific-popup.css   */
   }
   .other-pages-header {
     height: 100vh !important;
+    padding-top: 192px;
   }
   .order-a-website-position {
     margin: 32px auto 32px auto;
@@ -1570,7 +1570,6 @@ magnific-popup.css   */
 .services-font-size {
   font-size: 36px;
 }
-
 }
 
 /* 481px  <>  991px */
