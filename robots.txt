@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /test/
-Disallow: /ecommerce.html
-Disallow: /seo.html
+# Disallow: /ecommerce.html
+# Disallow: /seo.html
