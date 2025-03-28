@@ -26,8 +26,8 @@ https://templatemo.com/tm-578-first-portfolio
 
   --body-font-family:             'JetBrainsMono', sans-serif;
 
-  --h1-font-size:                 62px;
-  --h2-font-size:                 48px;
+  --h1-font-size:                 48px;
+  --h2-font-size:                 32px;
   --h3-font-size:                 36px;
   --h4-font-size:                 32px;
   --h5-font-size:                 24px;
@@ -186,7 +186,6 @@ strong {
   width: 90.4px;
   height: 90.4px;
 }
-
 
 /*---------------------------------------
   PRE LOADER               
@@ -411,7 +410,7 @@ strong {
 
 .navbar-nav .nav-link.active::after, 
 .navbar-nav .nav-link:hover::after {
-  background: var(--secondary-color);
+  background: var(--border-color);
 }
 
 .navbar-nav .nav-link.active, 
@@ -499,15 +498,19 @@ strong {
   background: var(--secondary-color);
   position: relative;
   overflow: hidden;
+
+  height: 100vh;
+  padding-top: 15%;
 }
 
-.dragokatic-title,
+.drago-katic-development-text-box,
 .dragokatic h2 {
   background: var(--white-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   border-radius: var(--border-radius-large);
   display: inline-block;
   padding: 8px 24px;
+  font-size: var(--h2-font-size);
 }
 
 .dragokatic-text {
@@ -1290,7 +1293,7 @@ ROTACIONO I TRANSLATORNO KRETANJE
   height: 80vh !important;
 }
 .other-pages-title {
-  font-size: var(--h2-font-size) !important;
+  font-size: var(--h1-font-size) !important;
 }
 .other-pages-subtitle {
   margin-top: 32px;
@@ -1354,29 +1357,43 @@ magnific-popup.css   */
 }
 /*ORDER A WEBSITE*/
 .order-a-website {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .custom-btn {
-    text-align: center;
-    vertical-align: bottom;
+  text-align: center;
+  vertical-align: bottom;
 }
 .order-a-website-position{
   margin-right: 23%;
 }
+/*
+
+:root {
+  --body-font-family:             'JetBrainsMono', sans-serif;
+
+  --h1-font-size:                 62px;
+  --h2-font-size:                 42px;
+  --h3-font-size:                 36px;
+  --h4-font-size:                 32px;
+  --h5-font-size:                 24px;
+  --h6-font-size:                 22px;
+  --p-font-size:                  16px;
+  --menu-font-size:               12px;
+  --copyright-font-size:          14px;
+  --contact-headers:              14px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-normal:           400;
+  --font-weight-medium:           500;
+  --font-weight-bold:             700;
+}
+
 */
-/*--white-color:                  #ffffff;*/ /* White */
-/*--primary-color:                #ff911c;*/ /* Sunny Orange */
-/*--secondary-color:              #0d1321;*/ /* #0d1321 Dark Blue */
-/*--section-bg-color:             #fafcff;*/ /* #f9f9f9 or #f7fbff */
-/*--dark-color:                   #050a14;*/ /* #0d1321 Tamnija Dark Blue */
-/*--p-color:                      #171230;*/ /* #2c3e6f; #717275 or #7172b3 or #4a6fa5 */
-/*--border-color:                 #e9ebf9;*/ /* #e9eaeb; or #e9ebf9; */
-/*--featured-border-color:        #171230;*/ /* #727aab; Just Blue*/
-/*--link-color:                   #050a14;*/ /* Haiti */
-
-
 
 /* END OF CUSTOM CSS */
 
@@ -1386,26 +1403,29 @@ magnific-popup.css   */
 -----------------------------------------*/
 
 /* < 480px */
+
 @media (max-width: 480px) {
-  h1 {
-    font-size: 40px;
-  }
+  :root {
+    --body-font-family:             'JetBrainsMono', sans-serif;
 
-  h2 {
-    /*font-size: 28px;*/
-    font-size: 24px;
-  }
+    --h1-font-size:                 36px;
+    --h2-font-size:                 24px;
+    --h3-font-size:                 42px;
+    --h4-font-size:                 32px;
+    --h5-font-size:                 24px;
+    --h6-font-size:                 20px;
+    --p-font-size:                  16px;
+    --menu-font-size:               12px;
+    --copyright-font-size:          14px;
+    --contact-headers:              14px;
 
-  h3 {
-    font-size: 26px;
-  }
+    --border-radius-large:          100px;
+    --border-radius-medium:         20px;
+    --border-radius-small:          10px;
 
-  h4 {
-    font-size: 22px;
-  }
-
-  h5 {
-    font-size: 20px;
+    --font-weight-normal:           400;
+    --font-weight-medium:           500;
+    --font-weight-bold:             700;
   }
   .services-icon-wrap {
     display: none !important;
@@ -1425,19 +1445,12 @@ magnific-popup.css   */
     font-size: 16px;
     padding: 16px 32px;
   }
-  .dragokatic {
-    height: 100vh;
-    padding-top: 25%;
-  }
   .navbar-brand, .navbar-brand:hover {
     margin-left: 0px !important;
   }
   .about-thumb {
     padding-right: 0px;
     padding-left: 0px;
-  }
-  .hero-text {
-    padding: 8px;
   }
   .navbar {
     padding: 0px !important;
@@ -1464,20 +1477,12 @@ magnific-popup.css   */
     padding-top: 16px;
     padding-bottom: 16px;
   }
-
   .navbar-nav {
-    margin-top: -64px;
-  }
-
-  .dragokatic-image {
-    min-width: inherit;
-    /* correction */
-    margin: -75px 0px 0px -12px;
+    margin-top: 32px;
   }
   .img-size-position {
     margin-top: -300px;
   }
-
   .img-spriter{
     margin: 3px auto 2px auto;
   }
@@ -1496,14 +1501,9 @@ magnific-popup.css   */
   .is-sticky .navbar-nav {
     background: var(--white-color);
   }
-  .header-drago-katic {
-    font-size: 24px;
-  }
-  .drago-katic-development {
-    font-size: 22px;
-  }
   .featured-numbers {
-    padding-left: 8px;
+    padding-left: 16px;
+    font-size: var(--h3-font-size);
   }
   .featured-text {
     padding-left: 16px;
@@ -1512,29 +1512,79 @@ magnific-popup.css   */
     margin-top: 64px;
   }
   .header-text {
-    padding-left: 16px;
+    padding-left: 8px;
   }
   .navbar-toggler {
-    margin-right: 16px;
+    /*margin-right: 8px;
+    margin-top: -16px;*/
+    margin: 8px 8px auto auto;
+    padding-bottom: 16px;
   }
-
+/*---------------------------------------
+  AVATAR IMAGE               
+-----------------------------------------*/
+.avatar-image {
+    width: 96px;
+    height: 96px;
+}
+/*---------------------------------------
+  DRAGO KATIĆ               
+-----------------------------------------*/
+  .dragokatic {
+  background: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding-top: 45%;
+}
+.drago-katic-development-text-box,
+.dragokatic h2 {
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
+.header-drago-katic {
+  font-size: 20px;
+}
+.drago-katic-development {
+  font-size: 20px;
+}
+ .dragokatic-image {
+    min-width: inherit;
+    /* correction */
+    margin: -75px 0px 0px -12px;
+  }
   .other-pages-header {
     height: 100vh !important;
   }
+  .order-a-website-position {
+    margin: 32px auto 32px auto;
+    /* margin-right: 23%; */
+}
+.other-pages-description {
+    font-size: var(--h6-font-size);
+    color: var(--white-color);
+    text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
+    padding: 32px 8px;
+    text-align: center;
+}
+.services-font-size {
+  font-size: 36px;
+}
+
 }
 
 /* 481px  <>  991px */
 @media (min-width: 481px) and (max-width: 991px) {
-  /*.img-size-position {
-    margin-top: -590px;
-  }
-*/
+
+
+
+
   h1 {
     font-size: 48px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   h3 {
@@ -1740,6 +1790,7 @@ magnific-popup.css   */
     padding-bottom: 40%;
   }
 
+
   .dragokatic-text {
     top: 0;
     margin-bottom: 120px;
@@ -1874,6 +1925,8 @@ magnific-popup.css   */
     padding-bottom: 40%;
   }
 
+
+
   .dragokatic-text {
     top: 0;
     margin-bottom: 120px;
@@ -1930,9 +1983,7 @@ magnific-popup.css   */
   .dragokatic {
     height: 100vh;
   }
-  .dragokatic-title, .dragokatic h2 {
-    font-size: 32px;
-  }
+
 }
 
 
