@@ -24,6 +24,33 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
     <link rel="canonical" href="https://dragokatic.github.io/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<script>
+    (function() {
+        function isInstagramWebView() {
+            return /Instagram/i.test(navigator.userAgent);
+        }
+
+        function updateViewport() {
+            let metaViewport = document.querySelector('meta[name="viewport"]');
+            if (!metaViewport) {
+                metaViewport = document.createElement('meta');
+                metaViewport.name = "viewport";
+                document.head.appendChild(metaViewport);
+            }
+
+            let newContent = isInstagramWebView()
+                ? "width=device-width, initial-scale=0.8, user-scalable=no"
+                : "width=device-width, initial-scale=1, user-scalable=no";
+
+            // Samo ažuriraj ako se content razlikuje (izbegava se nepotrebna izmena)
+            if (metaViewport.getAttribute("content") !== newContent) {
+                metaViewport.setAttribute("content", newContent);
+            }
+        }
+
+        updateViewport();
+    })();
+</script>
     <meta name="description" content="Explore a selection of my research, including published papers, technical drawings, and academic projects, reflecting the breadth of my work"/>
     <meta name="author" content="Drago Katić"/>
     <title>Papers | Drago Katić Development</title>
