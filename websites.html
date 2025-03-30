@@ -24,33 +24,33 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
     <link rel="canonical" href="https://dragokatic.github.io/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<script>
-    (function() {
-        function isInstagramWebView() {
-            return /Instagram/i.test(navigator.userAgent);
-        }
-
-        function updateViewport() {
-            let metaViewport = document.querySelector('meta[name="viewport"]');
-            if (!metaViewport) {
-                metaViewport = document.createElement('meta');
-                metaViewport.name = "viewport";
-                document.head.appendChild(metaViewport);
+    <script>
+        (function() {
+            function isInstagramWebView() {
+                return /Instagram/i.test(navigator.userAgent);
             }
 
-            let newContent = isInstagramWebView()
+            function updateViewport() {
+                let metaViewport = document.querySelector('meta[name="viewport"]');
+                if (!metaViewport) {
+                    metaViewport = document.createElement('meta');
+                    metaViewport.name = "viewport";
+                    document.head.appendChild(metaViewport);
+                }
+
+                let newContent = isInstagramWebView()
                 ? "width=device-width, initial-scale=0.8, user-scalable=no"
                 : "width=device-width, initial-scale=1, user-scalable=no";
 
             // Samo ažuriraj ako se content razlikuje (izbegava se nepotrebna izmena)
-            if (metaViewport.getAttribute("content") !== newContent) {
-                metaViewport.setAttribute("content", newContent);
+                if (metaViewport.getAttribute("content") !== newContent) {
+                    metaViewport.setAttribute("content", newContent);
+                }
             }
-        }
 
-        updateViewport();
-    })();
-</script>
+            updateViewport();
+        })();
+    </script>
     <meta name="description" content="Explore demo websites to preview designs and functionality I can create for you. From modern to traditional, these demos show how your custom site could fit your brand and goals"/>
     <meta name="author" content="Drago Katić"/>
     <title>Websites | Drago Katić Development</title>
