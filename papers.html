@@ -24,33 +24,39 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
     <link rel="canonical" href="https://dragokatic.github.io/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<script>
-    (function() {
-        function isInstagramWebView() {
-            return /Instagram/i.test(navigator.userAgent);
-        }
-
-        function updateViewport() {
-            let metaViewport = document.querySelector('meta[name="viewport"]');
-            if (!metaViewport) {
-                metaViewport = document.createElement('meta');
-                metaViewport.name = "viewport";
-                document.head.appendChild(metaViewport);
+    <script>
+        /* 
+        Alternativno rešenje (koristi Chrome DevTools ručno)
+        Ako i dalje imaš problem, možeš ručno postaviti User-Agent u Chrome DevTools:
+        Otvori DevTools (F12 ili Ctrl + Shift + I).
+        Idi na Network conditions (... > More tools > Network conditions).
+        Isključi opciju Use browser default za User-Agent.
+        Unesi ovaj User-Agent string:
+        Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 Instagram 225.0.0.0.114 Android
+        Mozilla/5.0 (Linux; Android 10; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.104 Mobile Safari/537.36 Instagram 225.0.0.0.114 Android
+        */
+        (function() {
+            function isInstagramWebView() {
+                return /Instagram/i.test(navigator.userAgent);
             }
-
-            let newContent = isInstagramWebView()
-                ? "width=device-width, initial-scale=0.8, user-scalable=no"
+            function updateViewport() {
+                let metaViewport = document.querySelector('meta[name="viewport"]');
+                if (!metaViewport) {
+                    metaViewport = document.createElement('meta');
+                    metaViewport.name = "viewport";
+                    document.head.appendChild(metaViewport);
+                }
+                let newContent = isInstagramWebView()
+                ? "width=device-width, initial-scale=0.9, user-scalable=no"
                 : "width=device-width, initial-scale=1, user-scalable=no";
 
-            // Samo ažuriraj ako se content razlikuje (izbegava se nepotrebna izmena)
-            if (metaViewport.getAttribute("content") !== newContent) {
-                metaViewport.setAttribute("content", newContent);
+                if (metaViewport.getAttribute("content") !== newContent) {
+                    metaViewport.setAttribute("content", newContent);
+                }
             }
-        }
-
-        updateViewport();
-    })();
-</script>
+            updateViewport();
+        })();
+    </script>
     <meta name="description" content="Explore a selection of my research, including published papers, technical drawings, and academic projects, reflecting the breadth of my work"/>
     <meta name="author" content="Drago Katić"/>
     <title>Papers | Drago Katić Development</title>
