@@ -5,11 +5,6 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-   <loc>https://dragokatic.github.io/favicon.ico</loc>
-   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
-   <priority>1.00</priority>
-</url>
-<url>
   <loc>https://dragokatic.github.io/</loc>
   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
   <priority>1.00</priority>
@@ -25,9 +20,99 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://dragokatic.github.io/seo.html</loc>
+  <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dragokatic.github.io/ecommerce.html</loc>
+  <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://dragokatic.github.io/papers.html</loc>
   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/favicon.ico</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-57x57.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-60x60.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-72x72.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-76x76.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-114x114.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-120x120.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-144x144.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-icon-152x152.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/android-icon-192x192.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/favicon-32x32.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/favicon-96x96.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/favicon-16x16.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/ms-icon-144x144.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/favicon.svg</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
+</url>
+<url>
+   <loc>https://dragokatic.github.io/apple-touch-icon.png</loc>
+   <lastmod>2025-03-26T21:28:35+00:00</lastmod>
+   <priority>0.70</priority>
 </url>
 <url>
   <loc>https://dragokatic.github.io/see/themes/authentic/index.html</loc>
