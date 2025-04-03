@@ -54,10 +54,7 @@
         })();*/
 (function() {
     if (window.location.hostname.startsWith("www.")) {
-        document.body.innerHTML = `
-            <h2>Page not found</h2>
-            <p>Please use <a href="https://dragokatic.github.io">this link</a> instead.</p>
-        `;
+        window.location.href = "/404.html";  // Преусмеравање на 404 страницу
     }
 })();
     </script>
