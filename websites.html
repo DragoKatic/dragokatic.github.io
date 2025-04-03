@@ -47,15 +47,11 @@
         })();
     </script>
     <script type="text/javascript">
-(function() {
-    if (window.location.hostname.startsWith("www.")) {
-        let newUrl = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname + window.location.search;
-        window.location.href = newUrl;
-    } else if (window.location.protocol !== "https:") {
-        let secureUrl = "https://" + window.location.hostname + window.location.pathname + window.location.search;
-        window.location.href = secureUrl;
-    }
-})();
+        (function() {
+            if (window.location.hostname.startsWith("www.")) {
+                window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
+            }
+        })();
     </script>
     <meta name="description" content="Explore demo websites to preview designs and functionality I can create for you. From modern to traditional, these demos show how your custom site could fit your brand and goals"/>
     <meta name="author" content="Drago Katić"/>

@@ -47,15 +47,11 @@
         })();
     </script>
     <script type="text/javascript">
-(function() {
-    if (window.location.hostname.startsWith("www.")) {
-        let newUrl = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname + window.location.search;
-        window.location.href = newUrl;
-    } else if (window.location.protocol !== "https:") {
-        let secureUrl = "https://" + window.location.hostname + window.location.pathname + window.location.search;
-        window.location.href = secureUrl;
-    }
-})();
+        (function() {
+            if (window.location.hostname.startsWith("www.")) {
+                window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
+            }
+        })();
     </script>
     <meta name="description" content="Explore a selection of my research, including published papers, technical drawings, and academic projects, reflecting the breadth of my work"/>
     <meta name="author" content="Drago Katić"/>

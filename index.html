@@ -48,14 +48,10 @@
     </script>
     <script type="text/javascript">
         (function() {
-    if (window.location.hostname.startsWith("www.")) {
-        let newUrl = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname + window.location.search;
-        window.location.href = newUrl;
-    } else if (window.location.protocol !== "https:") {
-        let secureUrl = "https://" + window.location.hostname + window.location.pathname + window.location.search;
-        window.location.href = secureUrl;
-    }
-})();
+            if (window.location.hostname.startsWith("www.")) {
+                window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
+            }
+        })();
     </script>
     <meta name="description" content="With over 20 years of experience in PHP development, I offer technical expertise and a deep understanding of web applications that drive business growth." />
     <meta name="author" content="Drago Katić"/>
@@ -398,9 +394,9 @@
                                     <span class="profile-small-title">CMS Developer</span> 
                                 </p>
                                 <p>
-                                   <span class="profile-small-title">Primary school teacher</span> 
-                               </p>
-                               <p>
+                                 <span class="profile-small-title">Primary school teacher</span> 
+                             </p>
+                             <p>
                                 <span class="profile-small-title">Master of Information Technology</span>
                             </p>
                         </div>
