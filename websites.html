@@ -46,6 +46,14 @@
             updateViewport();
         })();
     </script>
+    <script type="text/javascript">
+        (function() {
+            if (window.location.hostname.startsWith("www.")) {
+                let newUrl = window.location.href.replace("www.", "");
+                window.location.replace(newUrl);
+            }
+        })();
+    </script>
     <meta name="description" content="Explore demo websites to preview designs and functionality I can create for you. From modern to traditional, these demos show how your custom site could fit your brand and goals"/>
     <meta name="author" content="Drago Katić"/>
     <title>Websites | Drago Katić Development</title>

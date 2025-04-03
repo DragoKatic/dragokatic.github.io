@@ -46,6 +46,14 @@
             updateViewport();
         })();
     </script>
+    <script type="text/javascript">
+        (function() {
+            if (window.location.hostname.startsWith("www.")) {
+                let newUrl = window.location.href.replace("www.", "");
+                window.location.replace(newUrl);
+            }
+        })();
+    </script>
     <meta name="description" content="Make use of my IT expertise to achieve a complete eCommerce solution, scripting and automation, UX/UI design, manual testing, security, tech support, migration, API integration, SEO, and more"/>
     <meta name="author" content="Drago Katić"/>
     <title>ЕCommerce | Drago Katić Development</title>

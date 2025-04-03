@@ -46,6 +46,14 @@
             updateViewport();
         })();
     </script>
+    <script type="text/javascript">
+        (function() {
+            if (window.location.hostname.startsWith("www.")) {
+                let newUrl = window.location.href.replace("www.", "");
+                window.location.replace(newUrl);
+            }
+        })();
+    </script>
     <meta name="description" content="With over 20 years of experience in PHP development, I offer technical expertise and a deep understanding of web applications that drive business growth." />
     <meta name="author" content="Drago Katić"/>
     <title>Drago Katić Development</title>

@@ -46,6 +46,14 @@
             updateViewport();
         })();
     </script>
+    <script type="text/javascript">
+        (function() {
+            if (window.location.hostname.startsWith("www.")) {
+                let newUrl = window.location.href.replace("www.", "");
+                window.location.replace(newUrl);
+            }
+        })();
+    </script>
     <meta name="description" content="I provide essential SEO services to boost your site's rankings and attract more organic traffic using advanced tools, helping your website stand out in the competitive digital landscape"/>
     <meta name="author" content="Drago Katić"/>
     <title>Basic SEO | Drago Katić Development</title>
