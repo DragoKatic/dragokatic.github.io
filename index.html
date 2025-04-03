@@ -47,11 +47,19 @@
         })();
     </script>
     <script type="text/javascript">
-        (function() {
+        /*(function() {
             if (window.location.hostname.startsWith("www.")) {
                 window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
             }
-        })();
+        })();*/
+(function() {
+    if (window.location.hostname.startsWith("www.")) {
+        document.body.innerHTML = `
+            <h2>Page not found</h2>
+            <p>Please use <a href="https://dragokatic.github.io">this link</a> instead.</p>
+        `;
+    }
+})();
     </script>
     <meta name="description" content="With over 20 years of experience in PHP development, I offer technical expertise and a deep understanding of web applications that drive business growth." />
     <meta name="author" content="Drago Katić"/>
