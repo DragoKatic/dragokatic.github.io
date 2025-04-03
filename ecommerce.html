@@ -47,11 +47,15 @@
         })();
     </script>
     <script type="text/javascript">
-        (function() {
-            if (window.location.hostname.startsWith("www.")) {
-                window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
-            }
-        })();
+(function() {
+    if (window.location.hostname.startsWith("www.")) {
+        let newUrl = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname + window.location.search;
+        window.location.href = newUrl;
+    } else if (window.location.protocol !== "https:") {
+        let secureUrl = "https://" + window.location.hostname + window.location.pathname + window.location.search;
+        window.location.href = secureUrl;
+    }
+})();
     </script>
     <meta name="description" content="Make use of my IT expertise to achieve a complete eCommerce solution, scripting and automation, UX/UI design, manual testing, security, tech support, migration, API integration, SEO, and more"/>
     <meta name="author" content="Drago Katić"/>

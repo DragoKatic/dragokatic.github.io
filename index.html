@@ -48,10 +48,14 @@
     </script>
     <script type="text/javascript">
         (function() {
-            if (window.location.hostname.startsWith("www.")) {
-                window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
-            }
-        })();
+    if (window.location.hostname.startsWith("www.")) {
+        let newUrl = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname + window.location.search;
+        window.location.href = newUrl;
+    } else if (window.location.protocol !== "https:") {
+        let secureUrl = "https://" + window.location.hostname + window.location.pathname + window.location.search;
+        window.location.href = secureUrl;
+    }
+})();
     </script>
     <meta name="description" content="With over 20 years of experience in PHP development, I offer technical expertise and a deep understanding of web applications that drive business growth." />
     <meta name="author" content="Drago Katić"/>
