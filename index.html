@@ -49,8 +49,7 @@
     <script type="text/javascript">
         (function() {
             if (window.location.hostname.startsWith("www.")) {
-                let newUrl = window.location.href.replace("www.", "");
-                window.location.replace(newUrl);
+                window.location.href = "https://" + window.location.hostname.replace("www.", "") + window.location.pathname;
             }
         })();
     </script>
@@ -395,9 +394,9 @@
                                     <span class="profile-small-title">CMS Developer</span> 
                                 </p>
                                 <p>
-                                 <span class="profile-small-title">Primary school teacher</span> 
-                             </p>
-                             <p>
+                                   <span class="profile-small-title">Primary school teacher</span> 
+                               </p>
+                               <p>
                                 <span class="profile-small-title">Master of Information Technology</span>
                             </p>
                         </div>
