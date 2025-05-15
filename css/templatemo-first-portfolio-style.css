@@ -1098,7 +1098,7 @@ font-size: var(--h1-font-size);
   margin-top: 0px; /* Razmak između "Drago Katić" i "Development" */
 }
 .header-logo {
-  width: 32px;
+  width: 24px;
   height: auto;
   margin: -8px 0px -8px -4px;
 }
