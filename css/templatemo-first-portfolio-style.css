@@ -1083,7 +1083,8 @@ font-size: var(--h1-font-size);
 
 .header-text {
   display: flex;
-  flex-direction: column; /* Postavlja "Development" ispod "Drago Katić" */
+  flex-direction: column;
+	line-height: 0.9;
 }
 
 .header-drago-katic {
