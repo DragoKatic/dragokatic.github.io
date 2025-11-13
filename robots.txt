@@ -1,6 +1,17 @@
 User-agent: *
-Disallow: /test/
-# Disallow: /ecommerce.html
-# Disallow: /seo.html
 Allow: /
-Sitemap: http://dragokatic.github.io/sitemap.xml
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.svg$
+Allow: /*.webp$
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://dragokatic.github.io/sitemap.xml
