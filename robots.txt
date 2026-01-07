@@ -14,7 +14,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-User-agent: bingbot
-Allow: /
-
 Sitemap: https://dragokatic.github.io/sitemap.xml
