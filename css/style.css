@@ -1,0 +1,18 @@
+/* style.css - central CSS file that imports all other CSS files */
+
+/* Import fonts */
+@import url('fonts.css');
+
+/* Import Bootstrap framework */
+@import url('bootstrap.min.css');
+
+/* Import Bootstrap icons */
+@import url('bootstrap-icons.css');
+
+/* Import Magnific Popup plugin */
+@import url('magnific-popup.css');
+
+/* Import portfolio-specific styles */
+@import url('portfolio-style.css');
+
+/* Additional custom styles can be added below */

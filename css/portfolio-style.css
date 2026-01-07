@@ -446,6 +446,16 @@ b, strong {
   height: 100%;
   pointer-events: none;
 }
+.section-bg-svg {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  pointer-events: none;
+}
 .tagline-image {
   position: absolute;
   z-index: 22;
@@ -457,9 +467,6 @@ b, strong {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 0px;
-}
-.secondary-color {
-  color: var(--primary-color);
 }
 /*---------------------------------------
   ABOUT              
@@ -591,7 +598,7 @@ b, strong {
   position: relative;
   bottom: 15px;
 }
-.services-thumb:hover .services-price-wrap {
+.services-thumb:hover .service-file-formats {
   background: var(--secondary-color);
 }
 .services-thumb:hover .services-price-overlay {
@@ -599,19 +606,20 @@ b, strong {
 }
 .bi {
   fill: var(--white-color) !important;
-  width: 24px !important;
-  height: 24px !important;
-  margin: 0px 4px 0px 0px;
+  width: 40px !important;
+  height: 40px !important;
+  margin: -8px 0px -12px 0px;
 }
 .bi-filetype {
   isolation: isolate;
-  font-size: 8px;
+  font-size: 70px;
   font-family: var(--body-font-family);
   font-weight: var(--font-weight-bold);
 }
 .kopimi-svg {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
 }
 .kopimi-circle {
   fill: var(--white-color);
@@ -621,15 +629,15 @@ b, strong {
 .kopimi {
   fill: var(--secondary-color);
 }
-.services-price-wrap {
+.service-file-formats {
   background: var(--primary-color);
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
-  padding: 6px 20px 6px 15px;
+  padding: 8px 8px;
   transition: all ease 0.5s;
 }
-.services-price-text {
+.services-context-data {
   color: var(--white-color);
   font-size: var(--copyright-font-size);
   font-weight: var(--font-weight-bold);
@@ -901,6 +909,8 @@ b, strong {
 }
 .menu-links-size {
   font-size: var(--menu-font-size);
+  letter-spacing: -0.05em;
+  word-spacing: -0.3125em;
 }
 .margin-0{
   margin: 0px;
@@ -1089,9 +1099,21 @@ b, strong {
 .order-a-website-position{
   margin-right: 23%;
 }
+/**
 .tree {
   font-family: var(--body-font-family);
   white-space: pre;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.folder {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+**/
+.tree {
+  font-family: var(--body-font-family);
+  white-space: pre-line;
   font-size: 16px;
   line-height: 1.4;
 }
@@ -1153,6 +1175,13 @@ b, strong {
 .tag-cloud h4 { animation-duration: 15s; }
 .tag-cloud h5 { animation-duration: 16s; }
 .tag-cloud h6 { animation-duration: 17s; }
+
+.download-info {
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+    width: 100%;
+}
 
 /* END OF CUSTOM CSS */
 
@@ -1226,6 +1255,18 @@ b, strong {
   .img-size-position {
     margin-top: -590px;
   }
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -16px 0px 32px auto;
+  }
+  .hero-text {
+    padding: 64px 0px 0px 16px;
+  }
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 0px;
+    margin-bottom: -32px !important;
+  }
 }
 
 /* 1200px–1399px — Desktops */
@@ -1292,13 +1333,25 @@ b, strong {
   .img-size-position {
     margin-top: -590px;
   }
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -16px 0px 32px auto;
+  }
+  .hero-text {
+    padding: 64px 0px 0px 16px;
+  }
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 0px;
+    margin-bottom: -32px !important;
+  }
 }
 
 /* 992px–1199px — Laptops / Large tablets */
 @media (min-width: 992px) and (max-width: 1199px) {
   :root {
     --h1-font-size:                 40px;
-    --h2-font-size:                 24px;
+    --h2-font-size:                 26px;
     --h3-font-size:                 32px;
     --h4-font-size:                 32px;
     --h5-font-size:                 24px;
@@ -1374,12 +1427,17 @@ b, strong {
   .ms-lg-5 {
     margin-left: 32px !important;
   }
-  .services-price-wrap {
-    width: 100%;
-    margin-top: 8px;
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -16px 0px 32px auto;
   }
   .hero-text {
     padding: 64px 0px 0px 16px;
+  }
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 0px;
+    margin-bottom: -32px !important;
   }
 }
 
@@ -1496,11 +1554,11 @@ b, strong {
   }
   .navbar-toggler {
     margin: 8px 8px auto auto;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
   }
   .avatar-image {
     width: 96px;
-    height: 96px;
+    height: 128px;
   }
   .dragokatic {
     background: var(--secondary-color);
@@ -1544,9 +1602,9 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-font-size {
-    font-size: var(--h4-font-size);
-    padding: 0px 16px;
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 8px;
   }
   .section-margin {
     margin-top: 0px;
@@ -1555,14 +1613,22 @@ b, strong {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .services-price-wrap {
-    width: 48%;
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -8px 8px 16px auto;
   }
   .align-items-center {
     width: 100%;
   }
   .container {
     max-width: 100%;
+  }
+  .download-info {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: right;
+    padding-right: 78px;
   }
 }
 
@@ -1679,11 +1745,11 @@ b, strong {
   }
   .navbar-toggler {
     margin: 8px 8px auto auto;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
   }
   .avatar-image {
     width: 96px;
-    height: 96px;
+    height: 128px;
   }
   .dragokatic {
     background: var(--secondary-color);
@@ -1727,9 +1793,9 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-font-size {
-    font-size: var(--h4-font-size);
-    padding: 0px 16px;
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 8px;
   }
   .section-margin {
     margin-top: 0px;
@@ -1738,8 +1804,9 @@ b, strong {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .services-price-wrap {
-    width: 48%;
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -8px 8px 16px auto;
   }
   .align-items-center {
     width: 100%;
@@ -1750,6 +1817,17 @@ b, strong {
   .tag-cloud {
     gap: 0.3rem;
     padding: 0.5rem;
+  }
+  .download-info {
+    position: absolute;
+    bottom: 16px;
+    width: 100%;
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 128px;
+  }
+  .download-info p {
+    font-size: 14px !important;
   }
 }
 
@@ -1861,11 +1939,11 @@ b, strong {
   }
   .navbar-toggler {
     margin: 8px 8px auto auto;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
   }
   .avatar-image {
     width: 96px;
-    height: 96px;
+    height: 128px;
     margin-left: -40px;
   }
   .dragokatic {
@@ -1910,9 +1988,9 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-font-size {
-    font-size: var(--h4-font-size);
-    padding: 0px 16px;
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 8px;
   }
   .section-margin {
     margin-top: 0px;
@@ -1921,9 +1999,9 @@ b, strong {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .services-price-wrap {
-    width: 100%;
-    margin-top: 8px;
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -8px 8px 16px auto;
   }
   .align-items-center {
     width: 100%;
@@ -1935,13 +2013,21 @@ b, strong {
     gap: 0.3rem;
     padding: 0.5rem;
   }
+  .download-info {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px -30px;
+  }
+  .download-info p {
+    font-size: 16px !important;
+  }
 }
 
 /* 321px–480px — Small phones */
 @media (min-width: 321px) and (max-width: 480px) {
   :root {
     --h1-font-size:                 30px;
-    --h2-font-size:                 20px;
+    --h2-font-size:                 26px;
     --h3-font-size:                 32px;
     --h4-font-size:                 32px;
     --h5-font-size:                 24px;
@@ -2041,17 +2127,15 @@ b, strong {
     padding-left: 8px;
   }
   .navbar-toggler {
-    /*margin-right: 8px;
-    margin-top: -16px;*/
     margin: 8px 8px auto auto;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
   }
 /*---------------------------------------
   AVATAR IMAGE               
 -----------------------------------------*/
   .avatar-image {
     width: 96px;
-    height: 96px;
+    height: 128px;
   }
 /*---------------------------------------
   DRAGO KATIĆ               
@@ -2099,20 +2183,29 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-font-size {
-    font-size: var(--h4-font-size);
-    padding: 0px 16px;
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 0px;
+    margin-bottom: -48px !important;
   }
   .section-margin {
     margin-top: 0px;
   }
-  .services-price-wrap {
-    width: 100%;
-    margin-top: 8px;
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -16px 0px 32px auto;
   }
   .tag-cloud {
     gap: 0.3rem;
     padding: 0.5rem;
+  }
+  .download-info {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px -30px;
+  }
+  .download-info p {
+    font-size: 16px !important;
   }
 }
 
@@ -2120,7 +2213,7 @@ b, strong {
 @media (max-width: 320px) {
   :root {
     --h1-font-size:                 28px;
-    --h2-font-size:                 20px;
+    --h2-font-size:                 22px;
     --h3-font-size:                 32px;
     --h4-font-size:                 28px;
     --h5-font-size:                 20px;
@@ -2220,17 +2313,15 @@ b, strong {
     padding-left: 8px;
   }
   .navbar-toggler {
-    /*margin-right: 8px;
-    margin-top: -16px;*/
     margin: 8px 8px auto auto;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
   }
 /*---------------------------------------
   AVATAR IMAGE               
 -----------------------------------------*/
   .avatar-image {
     width: 96px;
-    height: 96px;
+    height: 128px;
   }
 /*---------------------------------------
   DRAGO KATIĆ               
@@ -2277,20 +2368,29 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-font-size {
-    font-size: var(--h4-font-size);
-    padding: 0px 16px;
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 0px;
+    margin-bottom: -92px !important;
   }
   .section-margin {
     margin-top: 0px;
   }
-  .services-price-wrap {
-    width: 100%;
-    margin-top: 8px;
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: -16px 0px 32px auto;
   }
   .tag-cloud {
     gap: 0.3rem;
     padding: 0.5rem;
+  }
+  .download-info {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px -30px;
+  }
+  .download-info p {
+    font-size: 14px !important;
   }
 }
 
