@@ -1,6 +1,3 @@
-//menu-active
-//by ChatGPT
-
 $(document).ready(function () {
     var path = window.location.pathname.split("/").pop(); // uzima ime fajla, npr. "seo.html"
 
