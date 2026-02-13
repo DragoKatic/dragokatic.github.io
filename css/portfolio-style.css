@@ -416,6 +416,7 @@ b, strong {
   overflow: hidden;
   height: 100vh;
   padding-top: 128px;
+  min-height: 640px;
 }
 .drago-katic-development-text-box,
 .dragokatic h2 {
@@ -529,6 +530,10 @@ b, strong {
 .featured-border-start {
   border-left: 1px solid var(--border-color);
 }
+.featured-section {
+  margin-left: 8px;
+  margin-right: -8px;
+}
 /*---------------------------------------
   CLIENTS              
 -----------------------------------------*/
@@ -604,11 +609,14 @@ b, strong {
 .services-thumb:hover .services-price-overlay {
   background: var(--primary-color);
 }
+.padding-col {
+  padding-bottom: 64px;
+}
 .bi {
   fill: var(--white-color) !important;
   width: 40px !important;
   height: 40px !important;
-  margin: -8px 0px -12px 0px;
+  margin: -8px 0px -12px 4px;
 }
 .bi-filetype {
   isolation: isolate;
@@ -651,6 +659,10 @@ b, strong {
   width: 20px;
   height: 20px;
   pointer-events: none;
+}
+.homepage-services {
+  margin: -40px 0px 0px 0px;
+  font-size: var(--h1-font-size);
 }
 /*---------------------------------------
   PROJECTS              
@@ -1191,7 +1203,11 @@ b, strong {
 
 /* ≥1600px — Extra large desktops */
 @media (min-width: 1600px) {
-
+  .services-context-description {
+    font-size: var(--h2-font-size);
+    padding: 0px 0px;
+    margin-bottom: -16px !important;
+  }
 }
 
 /* 1400px–1599px — Large desktops */
@@ -1265,7 +1281,7 @@ b, strong {
   .services-context-description {
     font-size: var(--h2-font-size);
     padding: 0px 0px;
-    margin-bottom: -32px !important;
+    margin-bottom: -42px !important;
   }
 }
 
@@ -1343,7 +1359,7 @@ b, strong {
   .services-context-description {
     font-size: var(--h2-font-size);
     padding: 0px 0px;
-    margin-bottom: -32px !important;
+    margin-bottom: -48px !important;
   }
 }
 
@@ -1351,7 +1367,7 @@ b, strong {
 @media (min-width: 992px) and (max-width: 1199px) {
   :root {
     --h1-font-size:                 40px;
-    --h2-font-size:                 26px;
+    --h2-font-size:                 24px;
     --h3-font-size:                 32px;
     --h4-font-size:                 32px;
     --h5-font-size:                 24px;
@@ -1437,7 +1453,7 @@ b, strong {
   .services-context-description {
     font-size: var(--h2-font-size);
     padding: 0px 0px;
-    margin-bottom: -32px !important;
+    margin-bottom: -48px !important;
   }
 }
 
@@ -1502,7 +1518,7 @@ b, strong {
     margin-bottom: -128px;
   }
   .services-thumb {
-    padding: 16px 8px 32px 8px !important;
+    padding: 32px 8px 32px 8px !important;
   } 
   .services-thumb-up {
     margin-bottom: 0px;
@@ -1693,7 +1709,7 @@ b, strong {
     margin-bottom: -128px;
   }
   .services-thumb {
-    padding: 16px 8px 32px 8px !important;
+    padding: 32px 8px 32px 8px !important;
   } 
   .services-thumb-up {
     margin-bottom: 0px;
@@ -1887,7 +1903,7 @@ b, strong {
     margin-bottom: -128px;
   }
   .services-thumb {
-    padding: 16px 8px 32px 8px !important;
+    padding: 32px 8px 32px 8px !important;
   } 
   .services-thumb-up {
     margin-bottom: 0px;
@@ -2021,6 +2037,9 @@ b, strong {
   .download-info p {
     font-size: 16px !important;
   }
+  .padding-col {
+    padding-bottom: 0px;
+  }
 }
 
 /* 321px–480px — Small phones */
@@ -2045,7 +2064,7 @@ b, strong {
     margin-bottom: -128px;
   }
   .services-thumb {
-    padding: 16px 8px 32px 8px !important;
+    padding: 32px 8px 32px 8px !important;
   }    
   .logo-image {
     position: absolute;
@@ -2186,7 +2205,7 @@ b, strong {
   .services-context-description {
     font-size: var(--h2-font-size);
     padding: 0px 0px;
-    margin-bottom: -48px !important;
+    margin-bottom: -50px !important;
   }
   .section-margin {
     margin-top: 0px;
@@ -2206,6 +2225,9 @@ b, strong {
   }
   .download-info p {
     font-size: 16px !important;
+  }
+  .padding-col {
+    padding-bottom: 0px;
   }
 }
 
@@ -2231,7 +2253,7 @@ b, strong {
     margin-bottom: -128px;
   }
   .services-thumb {
-    padding: 16px 8px 32px 8px !important;
+    padding: 32px 8px 32px 8px !important;
   }    
   .logo-image {
     position: absolute;
@@ -2391,6 +2413,9 @@ b, strong {
   }
   .download-info p {
     font-size: 14px !important;
+  }
+  .padding-col {
+    padding-bottom: 0px;
   }
 }
 
