@@ -1,5 +1,138 @@
-<iframe src="https://dragokatic.github.io/"
-        style="position:fixed; top:0; left:0; width:100%; height:100%; border:none; overflow:hidden;"
-        loading="eager"
-        title="Drago Katić Development Website">
-</iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Drago Katić Development</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: sans-serif;
+    }
+
+    /* LINK RESET + CONTAINER */
+    a.logo-container,
+    a.logo-container:link,
+    a.logo-container:visited,
+    a.logo-container:hover,
+    a.logo-container:active,
+    a.logo-container:focus,
+    a.logo-container:focus-visible {
+
+        all: unset;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .logo-image {
+        max-width: 1000px;
+        width: 90vw;
+        height: auto;
+        object-fit: contain;
+        animation: rotateImage 10s linear infinite;
+    }
+
+    @keyframes rotateImage {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    /* Offline message */
+    .offline-message {
+        display: none;
+        text-align: center;
+        color: #333;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+</style>
+</head>
+<body>
+
+<a href="https://dragokatic.github.io/"
+   class="logo-container"
+   target="_blank"
+   rel="noopener noreferrer external"
+   title="Visit Drago Katić Development website"
+   aria-label="Visit Drago Katić Development website">
+
+    <img src="logo.png"
+         alt="Drago Katić Development Logo"
+         class="logo-image"
+         loading="eager"
+         decoding="async">
+
+</a>
+
+<div class="offline-message">
+    You appear to be offline.<br>
+    Please connect to the internet to visit <strong>Drago Katić Development</strong>.
+</div>
+
+<script>
+(function () {
+    const TARGET_URL = "https://dragokatic.github.io/";
+    const IDLE_TIME = 30000; // 30 sekundi
+
+    let idleTimer;
+
+    const offlineMessage = document.querySelector(".offline-message");
+    const logoLink = document.querySelector(".logo-container");
+
+    function goToSite() {
+        if (navigator.onLine) {
+            window.location.href = TARGET_URL;
+        } else {
+            // Prikaži offline poruku
+            offlineMessage.style.display = "block";
+        }
+    }
+
+    function resetTimer() {
+        clearTimeout(idleTimer);
+        idleTimer = setTimeout(goToSite, IDLE_TIME);
+    }
+
+    ["click", "touchstart", "mousemove", "keydown"].forEach(event => {
+        document.addEventListener(event, resetTimer, { passive: true });
+    });
+
+    resetTimer();
+
+    // Klik na logo odmah vodi na target ako online
+    logoLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        goToSite();
+    });
+
+    // Monitor online status i automatski ukloni offline poruku
+    window.addEventListener("online", () => {
+        offlineMessage.style.display = "none";
+    });
+})();
+</script>
+
+</body>
+</html>
