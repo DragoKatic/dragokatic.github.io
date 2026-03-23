@@ -661,8 +661,8 @@ b, strong {
   pointer-events: none;
 }
 .homepage-services {
-  margin: -40px 0px 0px 0px;
-  font-size: var(--h1-font-size);
+  /*margin: -40px 0px 0px 0px;
+  font-size: var(--h1-font-size);*/
 }
 /*---------------------------------------
   PROJECTS              
@@ -1040,10 +1040,11 @@ b, strong {
   height: 80vh !important;
 }
 .other-pages-title {
-  font-size: var(--h1-font-size) !important;
+  margin-top: 0px;
+  /*font-size: var(--h1-font-size) !important;*/
 }
 .other-pages-subtitle {
-  margin-top: 32px;
+  margin-top: 0px;
 }
 .other-pages-description {
   font-size: var(--h6-font-size) !important;
@@ -1189,10 +1190,10 @@ b, strong {
 .tag-cloud h6 { animation-duration: 17s; }
 
 .download-info {
-    position: absolute;
-    bottom: 16px;
-    left: 32px;
-    width: 100%;
+  position: absolute;
+  bottom: 16px;
+  left: 32px;
+  width: 100%;
 }
 
 /* END OF CUSTOM CSS */
@@ -1287,7 +1288,7 @@ b, strong {
 
 /* 1200px–1399px — Desktops */
 @media (min-width: 1200px) and (max-width: 1399px) {
-    :root {
+  :root {
     --h1-font-size:                 48px;
     --h2-font-size:                 28px;
     --h3-font-size:                 32px;
@@ -1366,7 +1367,7 @@ b, strong {
 /* 992px–1199px — Laptops / Large tablets */
 @media (min-width: 992px) and (max-width: 1199px) {
   :root {
-    --h1-font-size:                 40px;
+    --h1-font-size:                 42px;
     --h2-font-size:                 24px;
     --h3-font-size:                 32px;
     --h4-font-size:                 32px;
@@ -1376,6 +1377,7 @@ b, strong {
     --menu-font-size:               14px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
+    --context-description:          32px;
   }
   .menu-links-size {
     font-size: var(--menu-font-size);
@@ -1409,10 +1411,6 @@ b, strong {
   .services-thumb-up {
     bottom: 0;
     margin-bottom: 32px;
-  }
-  .services-thumb {
-    margin-bottom: 32px;
-    padding-bottom: 270px;
   }
   .services-icon-wrap {
     width: 55%;
@@ -1451,16 +1449,23 @@ b, strong {
     padding: 64px 0px 0px 16px;
   }
   .services-context-description {
-    font-size: var(--h2-font-size);
-    padding: 0px 0px;
-    margin-bottom: -48px !important;
+    font-size: var(--context-description);
+    padding: 0px 0px 8px 0px;
+    margin-bottom: -8px !important;
+  }
+  .services-thumb {
+    padding: 16px 8px 16px 8px !important;
+  } 
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px -8px 0px;
   }
 }
 
 /* 768px–991px — Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   :root {
-    --h1-font-size:                 36px;
+    --h1-font-size:                 48px;
     --h2-font-size:                 24px;
     --h3-font-size:                 42px;
     --h4-font-size:                 32px;
@@ -1470,6 +1475,7 @@ b, strong {
     --menu-font-size:               12px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
+    --context-description:          40px;
   }
   .navbar-icon {
     font-size: var(--copyright-font-size);
@@ -1573,7 +1579,7 @@ b, strong {
     padding-bottom: 8px;
   }
   .avatar-image {
-    width: 96px;
+    width: 128px;
     height: 128px;
   }
   .dragokatic {
@@ -1619,8 +1625,16 @@ b, strong {
     margin-top: 0px;
   }
   .services-context-description {
-    font-size: var(--h2-font-size);
-    padding: 0px 8px;
+    font-size: var(--context-description);
+    padding: 0px 0px 8px 0px;
+    margin-bottom: -8px !important;
+  }
+  .services-thumb {
+    padding: 16px 8px 16px 8px !important;
+  } 
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px -8px 0px;
   }
   .section-margin {
     margin-top: 0px;
@@ -1628,10 +1642,6 @@ b, strong {
   .section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -8px 8px 16px auto;
   }
   .align-items-center {
     width: 100%;
@@ -1661,6 +1671,7 @@ b, strong {
     --menu-font-size:               12px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
+    --context-description:          36px;
   }
   .navbar-icon {
     font-size: var(--copyright-font-size);
@@ -1764,7 +1775,7 @@ b, strong {
     padding-bottom: 8px;
   }
   .avatar-image {
-    width: 96px;
+    width: 128px;
     height: 128px;
   }
   .dragokatic {
@@ -1810,8 +1821,16 @@ b, strong {
     margin-top: 0px;
   }
   .services-context-description {
-    font-size: var(--h2-font-size);
-    padding: 0px 8px;
+    font-size: var(--context-description);
+    padding: 0px 0px 8px 0px;
+    margin-bottom: -8px !important;
+  }
+  .services-thumb {
+    padding: 16px 8px 16px 8px !important;
+  } 
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px -8px 0px;
   }
   .section-margin {
     margin-top: 0px;
@@ -1819,10 +1838,6 @@ b, strong {
   .section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -8px 8px 16px auto;
   }
   .align-items-center {
     width: 100%;
@@ -1860,6 +1875,7 @@ b, strong {
     --menu-font-size:               16px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
+    --context-description:          36px;
   }
   .navbar-icon {
     font-size: var(--copyright-font-size);
@@ -1902,9 +1918,6 @@ b, strong {
     display: none !important;
     margin-bottom: -128px;
   }
-  .services-thumb {
-    padding: 32px 8px 32px 8px !important;
-  } 
   .services-thumb-up {
     margin-bottom: 0px;
   }   
@@ -1958,9 +1971,9 @@ b, strong {
     padding-bottom: 8px;
   }
   .avatar-image {
-    width: 96px;
+    width: 128px;
     height: 128px;
-    margin-left: -40px;
+    margin-left: 64px;
   }
   .dragokatic {
     background: var(--secondary-color);
@@ -2005,8 +2018,16 @@ b, strong {
     margin-top: 0px;
   }
   .services-context-description {
-    font-size: var(--h2-font-size);
-    padding: 0px 8px;
+    font-size: var(--context-description);
+    padding: 0px 0px 8px 0px;
+    margin-bottom: -8px !important;
+  }
+  .services-thumb {
+    padding: 16px 8px 16px 8px !important;
+  } 
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px -8px 0px;
   }
   .section-margin {
     margin-top: 0px;
@@ -2014,10 +2035,6 @@ b, strong {
   .section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
-  }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -8px 8px 16px auto;
   }
   .align-items-center {
     width: 100%;
@@ -2045,8 +2062,8 @@ b, strong {
 /* 321px–480px — Small phones */
 @media (min-width: 321px) and (max-width: 480px) {
   :root {
-    --h1-font-size:                 30px;
-    --h2-font-size:                 26px;
+    --h1-font-size:                 36px;
+    --h2-font-size:                 24px;
     --h3-font-size:                 32px;
     --h4-font-size:                 32px;
     --h5-font-size:                 24px;
@@ -2055,6 +2072,7 @@ b, strong {
     --menu-font-size:               14px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
+    --context-description:          30px;
   }
   .hero-text {
     padding: 192px 0px 16px 0px;
@@ -2063,9 +2081,6 @@ b, strong {
     display: none !important;
     margin-bottom: -128px;
   }
-  .services-thumb {
-    padding: 32px 8px 32px 8px !important;
-  }    
   .logo-image {
     position: absolute;
     right: 0%;
@@ -2152,91 +2167,93 @@ b, strong {
 /*---------------------------------------
   AVATAR IMAGE               
 -----------------------------------------*/
-  .avatar-image {
-    width: 96px;
-    height: 128px;
-  }
+.avatar-image {
+  width: 128px;
+  height: 128px;
+}
 /*---------------------------------------
   DRAGO KATIĆ               
 -----------------------------------------*/
-  .dragokatic {
-    background: var(--secondary-color);
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    padding-top: 256px;
-  }
-  .drago-katic-development-text-box,
-  .dragokatic h2 {
-    font-size: var(--h2-font-size);
-    text-align: center;
-  }
-  .header-drago-katic {
-    font-size: 20px;
-  }
-  .drago-katic-development {
-    font-size: 20px;
-  }
-  .dragokatic-image {
-    min-width: inherit;
-    margin: -75px 0px 0px -12px;
-  }
-  .other-pages-header {
-    height: 100vh !important;
-    padding-top: 0px;
-  }
-  .order-a-website-position {
-    margin: 0px auto 0px auto;
-  }
-  .other-pages-description {
-    font-size: var(--h6-font-size);
-    color: var(--white-color);
-    text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
-    padding: 32px 8px;
-    text-align: center;
-  }
-  .other-pages-title {
-    margin-top: 0px;
-    font-size: var(--h1-font-size) !important;
-  }
-  .other-pages-subtitle {
-    margin-top: 0px;
-  }
-  .services-context-description {
-    font-size: var(--h2-font-size);
-    padding: 0px 0px;
-    margin-bottom: -50px !important;
-  }
-  .section-margin {
-    margin-top: 0px;
-  }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -16px 0px 32px auto;
-  }
-  .tag-cloud {
-    gap: 0.3rem;
-    padding: 0.5rem;
-  }
-  .download-info {
-    position: relative;
-    width: 100%;
-    margin: 40px 0px 0px -30px;
-  }
-  .download-info p {
-    font-size: 16px !important;
-  }
-  .padding-col {
-    padding-bottom: 0px;
-  }
+.dragokatic {
+  background: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding-top: 256px;
+}
+.drago-katic-development-text-box,
+.dragokatic h2 {
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
+.header-drago-katic {
+  font-size: 20px;
+}
+.drago-katic-development {
+  font-size: 20px;
+}
+.dragokatic-image {
+  min-width: inherit;
+  margin: -75px 0px 0px -12px;
+}
+.other-pages-header {
+  height: 100vh !important;
+  padding-top: 0px;
+}
+.order-a-website-position {
+  margin: 0px auto 0px auto;
+}
+.other-pages-description {
+  font-size: var(--h6-font-size);
+  color: var(--white-color);
+  text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
+  padding: 32px 8px;
+  text-align: center;
+}
+.other-pages-title {
+  margin-top: 0px; 
+}
+.other-pages-subtitle {
+  margin-top: 0px;
+}
+.services-context-description {
+  font-size: var(--context-description);
+  padding: 0px 0px 8px 0px;
+  margin-bottom: -8px !important;
+}
+.services-thumb {
+  padding: 16px 8px 16px 8px !important;
+} 
+.service-file-formats {
+  padding: 8px 8px;
+  margin: 8px 0px -8px 0px;
+}
+.section-margin {
+  margin-top: 0px;
+}
+.tag-cloud {
+  gap: 0.3rem;
+  padding: 0.5rem;
+}
+.download-info {
+  position: relative;
+  width: 100%;
+  margin: 40px 0px 0px -30px;
+}
+.download-info p {
+  font-size: 16px !important;
+}
+.padding-col {
+  padding-bottom: 0px;
+}
 }
 
 /* ≤320px — Very small screens */
 @media (max-width: 320px) {
   :root {
-    --h1-font-size:                 28px;
+    --h1-font-size:                 36px;
     --h2-font-size:                 22px;
-    --h3-font-size:                 32px;
+    --h3-font-size:                 24px;
     --h4-font-size:                 28px;
     --h5-font-size:                 20px;
     --h6-font-size:                 16px;
@@ -2244,17 +2261,15 @@ b, strong {
     --menu-font-size:               14px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
+    --context-description:          30px;
   }
   .hero-text {
-    padding: 128px 0px 64px 0px;
+    padding: 128px 0px 8px 0px;
   }
   .services-icon-wrap {
     display: none !important;
     margin-bottom: -128px;
-  }
-  .services-thumb {
-    padding: 32px 8px 32px 8px !important;
-  }    
+  }   
   .logo-image {
     position: absolute;
     right: 0%;
@@ -2341,82 +2356,85 @@ b, strong {
 /*---------------------------------------
   AVATAR IMAGE               
 -----------------------------------------*/
-  .avatar-image {
-    width: 96px;
-    height: 128px;
-  }
+.avatar-image {
+  width: 128px;
+  height: 128px;
+}
 /*---------------------------------------
   DRAGO KATIĆ               
 -----------------------------------------*/
-  .dragokatic {
-    background: var(--secondary-color);
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    padding-top: 256px;
-  }
-  .drago-katic-development-text-box,
-  .dragokatic h2 {
-    font-size: var(--h2-font-size);
-    text-align: center;
-  }
-  .header-drago-katic {
-    font-size: 20px;
-  }
-  .drago-katic-development {
-    font-size: 20px;
-  }
-  .dragokatic-image {
-    min-width: inherit;
-    margin: -75px 0px 0px -12px;
-  }
-  .other-pages-header {
-    height: 100vh !important;
-    padding-top: 0px;
-  }
-  .order-a-website-position {
-    margin: 0px auto 0px auto;
-  }
-  .other-pages-description {
-    font-size: var(--h6-font-size);
-    color: var(--white-color);
-    text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
-    padding: 32px 8px;
-    text-align: center;
-  }
-  .other-pages-title {
-    margin-top: 0px;
-  }
-  .other-pages-subtitle {
-    margin-top: 0px;
-  }
-  .services-context-description {
-    font-size: var(--h2-font-size);
-    padding: 0px 0px;
-    margin-bottom: -92px !important;
-  }
-  .section-margin {
-    margin-top: 0px;
-  }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -16px 0px 32px auto;
-  }
-  .tag-cloud {
-    gap: 0.3rem;
-    padding: 0.5rem;
-  }
-  .download-info {
-    position: relative;
-    width: 100%;
-    margin: 40px 0px 0px -30px;
-  }
-  .download-info p {
-    font-size: 14px !important;
-  }
-  .padding-col {
-    padding-bottom: 0px;
-  }
+.dragokatic {
+  background: var(--secondary-color);
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding-top: 256px;
+}
+.drago-katic-development-text-box,
+.dragokatic h2 {
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
+.header-drago-katic {
+  font-size: 20px;
+}
+.drago-katic-development {
+  font-size: 20px;
+}
+.dragokatic-image {
+  min-width: inherit;
+  margin: -75px 0px 0px -12px;
+}
+.other-pages-header {
+  height: 100vh !important;
+  padding-top: 0px;
+}
+.order-a-website-position {
+  margin: 0px auto 0px auto;
+}
+.other-pages-description {
+  font-size: var(--h6-font-size);
+  color: var(--white-color);
+  text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
+  padding: 32px 8px;
+  text-align: center;
+}
+.other-pages-title {
+  margin-top: 0px;
+}
+.other-pages-subtitle {
+  margin-top: 0px;
+}
+.services-context-description {
+  font-size: var(--context-description);
+  padding: 0px 0px 8px 0px;
+  margin-bottom: -8px !important;
+}
+.services-thumb {
+  padding: 8px 8px 8px 8px !important;
+} 
+.service-file-formats {
+  padding: 8px 8px;
+  margin: 8px 0px -8px 0px;
+}
+.section-margin {
+  margin-top: 0px;
+}
+.tag-cloud {
+  gap: 0.3rem;
+  padding: 0.5rem;
+}
+.download-info {
+  position: relative;
+  width: 100%;
+  margin: 40px 0px 0px -30px;
+}
+.download-info p {
+  font-size: 14px !important;
+}
+.padding-col {
+  padding-bottom: 0px;
+}
 }
 
 /* =======================================
