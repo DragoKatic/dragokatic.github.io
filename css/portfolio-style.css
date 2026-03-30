@@ -1207,7 +1207,6 @@ b, strong {
   .services-context-description {
     font-size: var(--h2-font-size);
     padding: 0px 0px;
-    margin-bottom: -16px !important;
   }
 }
 
@@ -1272,97 +1271,100 @@ b, strong {
   .img-size-position {
     margin-top: -590px;
   }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -16px 0px 32px auto;
-  }
   .hero-text {
     padding: 64px 0px 0px 16px;
   }
   .services-context-description {
     font-size: var(--h2-font-size);
     padding: 0px 0px;
-    margin-bottom: -42px !important;
+  }
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 0px 0px 0px auto;
   }
 }
 
 /* 1200px–1399px — Desktops */
-@media (min-width: 1200px) and (max-width: 1399px) {
-  :root {
-    --h1-font-size:                 48px;
-    --h2-font-size:                 28px;
-    --h3-font-size:                 32px;
-    --h4-font-size:                 32px;
-    --h5-font-size:                 24px;
-    --h6-font-size:                 20px;
-    --p-font-size:                  16px;
-    --menu-font-size:               14px;
-    --copyright-font-size:          14px;
-    --contact-headers:              14px;
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    :root {
+      --h1-font-size:                 48px;
+      --h2-font-size:                 28px;
+      --h3-font-size:                 32px;
+      --h4-font-size:                 32px;
+      --h5-font-size:                 24px;
+      --h6-font-size:                 20px;
+      --p-font-size:                  16px;
+      --menu-font-size:               14px;
+      --copyright-font-size:          14px;
+      --contact-headers:              14px;
+    }
+    .dragokatic {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .dragokatic-text {
+      top: 0;
+      margin-bottom: 120px;
+    }
+    .about-thumb {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .about-numbers {
+      font-size: 42px;
+    }
+    .services-thumb-up {
+      bottom: 0;
+      margin-bottom: 32px;
+    }
+    .services-thumb {
+      margin-bottom: 32px;
+      padding-bottom: 270px;
+    }
+    .services-icon-wrap {
+      width: 45%;
+      height: 46%;
+    }
+    .tree {
+      padding: 8px 0px 16px 8px;
+    }
+    .services .col-lg-10 .row .col-lg-6:last-child,
+    .projects .col-lg-4:last-child {
+      margin-bottom: 0;
+    }
+    .projects-thumb {
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+    .contact-info {
+      border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
+      padding: 40px 30px;
+    }
+    .contact-info-border-start {
+      border-right: 0;
+      border-bottom: 1px solid var(--border-color);
+      border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+    }
+    .img-size-position {
+      margin-top: -590px;
+    }
+    .service-file-formats {
+      padding: 8px 8px;
+      margin: -16px 0px 32px auto;
+    }
+    .hero-text {
+      padding: 64px 0px 0px 16px;
+    }
+    .services-context-description {
+      font-size: var(--h2-font-size);
+      padding: 0px 0px 8px 0px;
+      width: 100%;
+    }
+    .service-file-formats {
+      padding: 8px 8px;
+      margin: 8px 0px 0px 0px !important;
+    }
   }
-  .dragokatic {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  .dragokatic-text {
-    top: 0;
-    margin-bottom: 120px;
-  }
-  .about-thumb {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .about-numbers {
-    font-size: 42px;
-  }
-  .services-thumb-up {
-    bottom: 0;
-    margin-bottom: 32px;
-  }
-  .services-thumb {
-    margin-bottom: 32px;
-    padding-bottom: 270px;
-  }
-  .services-icon-wrap {
-    width: 45%;
-    height: 46%;
-  }
-  .tree {
-    padding: 8px 0px 16px 8px;
-  }
-  .services .col-lg-10 .row .col-lg-6:last-child,
-  .projects .col-lg-4:last-child {
-    margin-bottom: 0;
-  }
-  .projects-thumb {
-    margin-top: 0;
-    margin-bottom: 32px;
-  }
-  .contact-info {
-    border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
-    padding: 40px 30px;
-  }
-  .contact-info-border-start {
-    border-right: 0;
-    border-bottom: 1px solid var(--border-color);
-    border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
-  }
-  .img-size-position {
-    margin-top: -590px;
-  }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -16px 0px 32px auto;
-  }
-  .hero-text {
-    padding: 64px 0px 0px 16px;
-  }
-  .services-context-description {
-    font-size: var(--h2-font-size);
-    padding: 0px 0px;
-    margin-bottom: -48px !important;
-  }
-}
 
 /* 992px–1199px — Laptops / Large tablets */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1374,7 +1376,7 @@ b, strong {
     --h5-font-size:                 24px;
     --h6-font-size:                 20px;
     --p-font-size:                  16px;
-    --menu-font-size:               14px;
+    --menu-font-size:               16px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
     --context-description:          32px;
@@ -1415,6 +1417,7 @@ b, strong {
   .services-icon-wrap {
     width: 55%;
     height: 35%;
+    display: none !important;
   }
   .services .col-lg-10 .row .col-lg-6:last-child,
   .projects .col-lg-4:last-child {
@@ -1451,14 +1454,24 @@ b, strong {
   .services-context-description {
     font-size: var(--context-description);
     padding: 0px 0px 8px 0px;
-    margin-bottom: -8px !important;
+    width: 100%;
   }
   .services-thumb {
     padding: 16px 8px 16px 8px !important;
   } 
   .service-file-formats {
     padding: 8px 8px;
-    margin: 8px 0px -8px 0px;
+    margin: 8px 0px 0px 0px !important;
+  }
+  .download-info {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: right;
+    padding-right: 44px;
+  }
+  .download-section{
+    padding-bottom: 128px;
   }
 }
 
@@ -1466,7 +1479,7 @@ b, strong {
 @media (min-width: 768px) and (max-width: 991px) {
   :root {
     --h1-font-size:                 48px;
-    --h2-font-size:                 24px;
+    --h2-font-size:                 30px;
     --h3-font-size:                 42px;
     --h4-font-size:                 32px;
     --h5-font-size:                 24px;
@@ -1624,18 +1637,9 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-context-description {
-    font-size: var(--context-description);
-    padding: 0px 0px 8px 0px;
-    margin-bottom: -8px !important;
-  }
   .services-thumb {
     padding: 16px 8px 16px 8px !important;
   } 
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: 8px 0px -8px 0px;
-  }
   .section-margin {
     margin-top: 0px;
   }
@@ -1656,19 +1660,26 @@ b, strong {
     text-align: right;
     padding-right: 78px;
   }
+  .services-context-description {
+    font-size: var(--context-description);
+  }
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px 0px 0px;
+  }
 }
 
 /* 576px–767px — Large phones / Small tablets */
 @media (min-width: 576px) and (max-width: 767px) {
   :root {
     --h1-font-size:                 36px;
-    --h2-font-size:                 24px;
+    --h2-font-size:                 32px;
     --h3-font-size:                 42px;
     --h4-font-size:                 32px;
     --h5-font-size:                 24px;
     --h6-font-size:                 20px;
     --p-font-size:                  16px;
-    --menu-font-size:               12px;
+    --menu-font-size:               16px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
     --context-description:          36px;
@@ -1820,17 +1831,8 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-context-description {
-    font-size: var(--context-description);
-    padding: 0px 0px 8px 0px;
-    margin-bottom: -8px !important;
-  }
   .services-thumb {
     padding: 16px 8px 16px 8px !important;
-  } 
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: 8px 0px -8px 0px;
   }
   .section-margin {
     margin-top: 0px;
@@ -1851,14 +1853,20 @@ b, strong {
   }
   .download-info {
     position: absolute;
-    bottom: 16px;
+    bottom: 0px;
     width: 100%;
     text-align: right;
     padding-right: 40px;
-    padding-top: 128px;
   }
   .download-info p {
     font-size: 14px !important;
+  }
+  .services-context-description {
+    font-size: var(--context-description);
+    padding: 8px 0px 8px 0px;
+  }
+  .service-file-formats {
+    padding: 8px 8px;
   }
 }
 
@@ -2017,17 +2025,8 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-context-description {
-    font-size: var(--context-description);
-    padding: 0px 0px 8px 0px;
-    margin-bottom: -8px !important;
-  }
   .services-thumb {
     padding: 16px 8px 16px 8px !important;
-  } 
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: 8px 0px -8px 0px;
   }
   .section-margin {
     margin-top: 0px;
@@ -2056,6 +2055,15 @@ b, strong {
   }
   .padding-col {
     padding-bottom: 0px;
+  }
+  .services-context-description {
+    font-size: var(--context-description);
+    padding: 0px 0px 8px 0px;
+    width: 100%;
+  }
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px 0px 0px !important;
   }
 }
 
@@ -2164,88 +2172,82 @@ b, strong {
     margin: 8px 8px auto auto;
     padding-bottom: 8px;
   }
-/*---------------------------------------
-  AVATAR IMAGE               
------------------------------------------*/
-.avatar-image {
-  width: 128px;
-  height: 128px;
-}
-/*---------------------------------------
-  DRAGO KATIĆ               
------------------------------------------*/
-.dragokatic {
-  background: var(--secondary-color);
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  padding-top: 256px;
-}
-.drago-katic-development-text-box,
-.dragokatic h2 {
-  font-size: var(--h2-font-size);
-  text-align: center;
-}
-.header-drago-katic {
-  font-size: 20px;
-}
-.drago-katic-development {
-  font-size: 20px;
-}
-.dragokatic-image {
-  min-width: inherit;
-  margin: -75px 0px 0px -12px;
-}
-.other-pages-header {
-  height: 100vh !important;
-  padding-top: 0px;
-}
-.order-a-website-position {
-  margin: 0px auto 0px auto;
-}
-.other-pages-description {
-  font-size: var(--h6-font-size);
-  color: var(--white-color);
-  text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
-  padding: 32px 8px;
-  text-align: center;
-}
-.other-pages-title {
-  margin-top: 0px; 
-}
-.other-pages-subtitle {
-  margin-top: 0px;
-}
-.services-context-description {
-  font-size: var(--context-description);
-  padding: 0px 0px 8px 0px;
-  margin-bottom: -8px !important;
-}
-.services-thumb {
-  padding: 16px 8px 16px 8px !important;
-} 
-.service-file-formats {
-  padding: 8px 8px;
-  margin: 8px 0px -8px 0px;
-}
-.section-margin {
-  margin-top: 0px;
-}
-.tag-cloud {
-  gap: 0.3rem;
-  padding: 0.5rem;
-}
-.download-info {
-  position: relative;
-  width: 100%;
-  margin: 40px 0px 0px -30px;
-}
-.download-info p {
-  font-size: 16px !important;
-}
-.padding-col {
-  padding-bottom: 0px;
-}
+  .avatar-image {
+    width: 128px;
+    height: 128px;
+  }
+  .dragokatic {
+    background: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 256px;
+  }
+  .drago-katic-development-text-box,
+  .dragokatic h2 {
+    font-size: var(--h2-font-size);
+    text-align: center;
+  }
+  .header-drago-katic {
+    font-size: 20px;
+  }
+  .drago-katic-development {
+    font-size: 20px;
+  }
+  .dragokatic-image {
+    min-width: inherit;
+    margin: -75px 0px 0px -12px;
+  }
+  .other-pages-header {
+    height: 100vh !important;
+    padding-top: 0px;
+  }
+  .order-a-website-position {
+    margin: 0px auto 0px auto;
+  }
+  .other-pages-description {
+    font-size: var(--h6-font-size);
+    color: var(--white-color);
+    text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
+    padding: 32px 8px;
+    text-align: center;
+  }
+  .other-pages-title {
+    margin-top: 0px; 
+  }
+  .other-pages-subtitle {
+    margin-top: 0px;
+  }
+  .services-thumb {
+    padding: 16px 8px 16px 8px !important;
+  }
+  .section-margin {
+    margin-top: 0px;
+  }
+  .tag-cloud {
+    gap: 0.3rem;
+    padding: 0.5rem;
+  }
+  .download-info {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px -30px;
+  }
+  .download-info p {
+    font-size: 16px !important;
+  }
+  .padding-col {
+    padding-bottom: 0px;
+  }
+  .services-context-description {
+    font-size: var(--context-description);
+    padding: 0px 0px 8px 0px;
+    width: 100%;
+  }
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px 0px 0px !important;
+  }
 }
 
 /* ≤320px — Very small screens */
@@ -2353,88 +2355,82 @@ b, strong {
     margin: 8px 8px auto auto;
     padding-bottom: 8px;
   }
-/*---------------------------------------
-  AVATAR IMAGE               
------------------------------------------*/
-.avatar-image {
-  width: 128px;
-  height: 128px;
-}
-/*---------------------------------------
-  DRAGO KATIĆ               
------------------------------------------*/
-.dragokatic {
-  background: var(--secondary-color);
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  padding-top: 256px;
-}
-.drago-katic-development-text-box,
-.dragokatic h2 {
-  font-size: var(--h2-font-size);
-  text-align: center;
-}
-.header-drago-katic {
-  font-size: 20px;
-}
-.drago-katic-development {
-  font-size: 20px;
-}
-.dragokatic-image {
-  min-width: inherit;
-  margin: -75px 0px 0px -12px;
-}
-.other-pages-header {
-  height: 100vh !important;
-  padding-top: 0px;
-}
-.order-a-website-position {
-  margin: 0px auto 0px auto;
-}
-.other-pages-description {
-  font-size: var(--h6-font-size);
-  color: var(--white-color);
-  text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
-  padding: 32px 8px;
-  text-align: center;
-}
-.other-pages-title {
-  margin-top: 0px;
-}
-.other-pages-subtitle {
-  margin-top: 0px;
-}
-.services-context-description {
-  font-size: var(--context-description);
-  padding: 0px 0px 8px 0px;
-  margin-bottom: -8px !important;
-}
-.services-thumb {
-  padding: 8px 8px 8px 8px !important;
-} 
-.service-file-formats {
-  padding: 8px 8px;
-  margin: 8px 0px -8px 0px;
-}
-.section-margin {
-  margin-top: 0px;
-}
-.tag-cloud {
-  gap: 0.3rem;
-  padding: 0.5rem;
-}
-.download-info {
-  position: relative;
-  width: 100%;
-  margin: 40px 0px 0px -30px;
-}
-.download-info p {
-  font-size: 14px !important;
-}
-.padding-col {
-  padding-bottom: 0px;
-}
+  .avatar-image {
+    width: 128px;
+    height: 128px;
+  }
+  .dragokatic {
+    background: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding-top: 256px;
+  }
+  .drago-katic-development-text-box,
+  .dragokatic h2 {
+    font-size: var(--h2-font-size);
+    text-align: center;
+  }
+  .header-drago-katic {
+    font-size: 20px;
+  }
+  .drago-katic-development {
+    font-size: 20px;
+  }
+  .dragokatic-image {
+    min-width: inherit;
+    margin: -75px 0px 0px -12px;
+  }
+  .other-pages-header {
+    height: 100vh !important;
+    padding-top: 0px;
+  }
+  .order-a-website-position {
+    margin: 0px auto 0px auto;
+  }
+  .other-pages-description {
+    font-size: var(--h6-font-size);
+    color: var(--white-color);
+    text-shadow: 2px 2px 5px rgba(13, 19, 33, 0.8), -2px -2px 5px rgba(13, 19, 33, 0.8);
+    padding: 32px 8px;
+    text-align: center;
+  }
+  .other-pages-title {
+    margin-top: 0px;
+  }
+  .other-pages-subtitle {
+    margin-top: 0px;
+  }
+  .services-context-description {
+    font-size: var(--context-description);
+    padding: 0px 0px 8px 0px;
+    margin-bottom: -8px !important;
+  }
+  .services-thumb {
+    padding: 8px 8px 8px 8px !important;
+  } 
+  .section-margin {
+    margin-top: 0px;
+  }
+  .tag-cloud {
+    gap: 0.3rem;
+    padding: 0.5rem;
+  }
+  .download-info {
+    position: relative;
+    width: 100%;
+    margin: 40px 0px 0px -30px;
+  }
+  .download-info p {
+    font-size: 14px !important;
+  }
+  .padding-col {
+    padding-bottom: 0px;
+  }
+  .service-file-formats {
+    padding: 8px 8px;
+    margin: 8px 0px -8px 0px !important;
+  }
 }
 
 /* =======================================
