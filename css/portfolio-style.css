@@ -1220,7 +1220,7 @@ b, strong {
     --h5-font-size:                 24px;
     --h6-font-size:                 20px;
     --p-font-size:                  16px;
-    --menu-font-size:               14px;
+    --menu-font-size:               16px;
     --copyright-font-size:          14px;
     --contact-headers:              14px;
   }
@@ -1289,12 +1289,12 @@ b, strong {
     :root {
       --h1-font-size:                 48px;
       --h2-font-size:                 28px;
-      --h3-font-size:                 32px;
+      --h3-font-size:                 28px;
       --h4-font-size:                 32px;
       --h5-font-size:                 24px;
       --h6-font-size:                 20px;
       --p-font-size:                  16px;
-      --menu-font-size:               14px;
+      --menu-font-size:               16px;
       --copyright-font-size:          14px;
       --contact-headers:              14px;
     }
@@ -1371,7 +1371,7 @@ b, strong {
   :root {
     --h1-font-size:                 42px;
     --h2-font-size:                 24px;
-    --h3-font-size:                 32px;
+    --h3-font-size:                 24px;
     --h4-font-size:                 32px;
     --h5-font-size:                 24px;
     --h6-font-size:                 20px;
@@ -1380,6 +1380,11 @@ b, strong {
     --copyright-font-size:          14px;
     --contact-headers:              14px;
     --context-description:          32px;
+  }
+  .logo-image {
+    position: absolute;
+    right: 10%;
+    top: 40%;
   }
   .menu-links-size {
     font-size: var(--menu-font-size);
@@ -1444,24 +1449,11 @@ b, strong {
   .ms-lg-5 {
     margin-left: 32px !important;
   }
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: -16px 0px 32px auto;
-  }
   .hero-text {
-    padding: 64px 0px 0px 16px;
-  }
-  .services-context-description {
-    font-size: var(--context-description);
-    padding: 0px 0px 8px 0px;
-    width: 100%;
+    padding: 256px 0px 0px 32px;
   }
   .services-thumb {
-    padding: 16px 8px 16px 8px !important;
-  } 
-  .service-file-formats {
-    padding: 8px 8px;
-    margin: 8px 0px 0px 0px !important;
+    padding: 16px !important;
   }
   .download-info {
     position: absolute;
@@ -1472,6 +1464,30 @@ b, strong {
   }
   .download-section{
     padding-bottom: 128px;
+  }
+  .d-flex.flex-wrap.align-items-center {
+    min-height: 128px;
+  }
+  .service-file-formats {
+    order: 1;
+    margin-left: auto;
+    align-self: flex-start;
+    padding: 8px;
+  }
+  .services-context-description {
+    order: 2;
+    flex-basis: 100%;
+    align-self: flex-end;
+    font-size: var(--context-description);
+    margin: 0 !important;
+  }
+  .services-context-data {
+    display: flex;
+    gap: 8px;
+  }
+  .services-context-data svg {
+    width: 20px;
+    height: auto;
   }
 }
 
@@ -1537,15 +1553,15 @@ b, strong {
     margin-bottom: -128px;
   }
   .services-thumb {
-    padding: 32px 8px 32px 8px !important;
+    padding: 32px !important;
   } 
   .services-thumb-up {
     margin-bottom: 0px;
   }   
   .logo-image {
     position: absolute;
-    left: 80%;
-    top: 50%;
+    left: 85%;
+    top: 35%;
     width: 64px;
   }
   .navbar .custom-btn {
@@ -1638,7 +1654,7 @@ b, strong {
     margin-top: 0px;
   }
   .services-thumb {
-    padding: 16px 8px 16px 8px !important;
+    padding: 16px !important;
   } 
   .section-margin {
     margin-top: 0px;
@@ -1731,7 +1747,7 @@ b, strong {
     margin-bottom: -128px;
   }
   .services-thumb {
-    padding: 32px 8px 32px 8px !important;
+    padding: 32px !important;
   } 
   .services-thumb-up {
     margin-bottom: 0px;
@@ -1832,7 +1848,7 @@ b, strong {
     margin-top: 0px;
   }
   .services-thumb {
-    padding: 16px 8px 16px 8px !important;
+    padding: 16px !important;
   }
   .section-margin {
     margin-top: 0px;
@@ -1931,8 +1947,8 @@ b, strong {
   }   
   .logo-image {
     position: absolute;
-    left: 80%;
-    top: 50%;
+    left: 85%;
+    top: 38%;
     width: 64px;
   }
   .navbar .custom-btn {
@@ -2026,7 +2042,7 @@ b, strong {
     margin-top: 0px;
   }
   .services-thumb {
-    padding: 16px 8px 16px 8px !important;
+    padding: 16px !important;
   }
   .section-margin {
     margin-top: 0px;
@@ -2056,14 +2072,29 @@ b, strong {
   .padding-col {
     padding-bottom: 0px;
   }
-  .services-context-description {
-    font-size: var(--context-description);
-    padding: 0px 0px 8px 0px;
-    width: 100%;
+  .d-flex.flex-wrap.align-items-center {
+    min-height: 92px;
   }
   .service-file-formats {
-    padding: 8px 8px;
-    margin: 8px 0px 0px 0px !important;
+    order: 1;
+    margin-left: auto;
+    align-self: flex-start;
+    padding: 8px;
+  }
+  .services-context-description {
+    order: 2;
+    flex-basis: 100%;
+    align-self: flex-end;
+    font-size: var(--context-description);
+    margin: 0 !important;
+  }
+  .services-context-data {
+    display: flex;
+    gap: 8px;
+  }
+  .services-context-data svg {
+    width: 20px;
+    height: auto;
   }
 }
 
@@ -2219,7 +2250,7 @@ b, strong {
     margin-top: 0px;
   }
   .services-thumb {
-    padding: 16px 8px 16px 8px !important;
+    padding: 16px !important;
   }
   .section-margin {
     margin-top: 0px;
@@ -2239,14 +2270,29 @@ b, strong {
   .padding-col {
     padding-bottom: 0px;
   }
-  .services-context-description {
-    font-size: var(--context-description);
-    padding: 0px 0px 8px 0px;
-    width: 100%;
+  .d-flex.flex-wrap.align-items-center {
+    min-height: 100px;
   }
   .service-file-formats {
-    padding: 8px 8px;
-    margin: 8px 0px 0px 0px !important;
+    order: 1;
+    margin-left: auto;
+    align-self: flex-start;
+    padding: 8px;
+  }
+  .services-context-description {
+    order: 2;
+    flex-basis: 100%;
+    align-self: flex-end;
+    font-size: var(--context-description);
+    margin: 0 !important;
+  }
+  .services-context-data {
+    display: flex;
+    gap: 8px;
+  }
+  .services-context-data svg {
+    width: 20px;
+    height: auto;
   }
 }
 
@@ -2401,13 +2447,8 @@ b, strong {
   .other-pages-subtitle {
     margin-top: 0px;
   }
-  .services-context-description {
-    font-size: var(--context-description);
-    padding: 0px 0px 8px 0px;
-    margin-bottom: -8px !important;
-  }
   .services-thumb {
-    padding: 8px 8px 8px 8px !important;
+    padding: 16px !important;
   } 
   .section-margin {
     margin-top: 0px;
@@ -2427,9 +2468,29 @@ b, strong {
   .padding-col {
     padding-bottom: 0px;
   }
+  .d-flex.flex-wrap.align-items-center {
+    min-height: 110px;
+  }
   .service-file-formats {
-    padding: 8px 8px;
-    margin: 8px 0px -8px 0px !important;
+    order: 1;
+    margin-left: auto;
+    align-self: flex-start;
+    padding: 8px;
+  }
+  .services-context-description {
+    order: 2;
+    flex-basis: 100%;
+    align-self: flex-end;
+    font-size: var(--context-description);
+    margin: 0 !important;
+  }
+  .services-context-data {
+    display: flex;
+    gap: 8px;
+  }
+  .services-context-data svg {
+    width: 20px;
+    height: auto;
   }
 }
 
