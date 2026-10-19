@@ -1,2 +1,3 @@
 # dragokatic.github.io
-Drago Katić Development
+
+Drago Katić Development has moved to **https://dkd.rs/**.
